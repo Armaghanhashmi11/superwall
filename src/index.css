@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+body {
+  margin: 0;
+  font-family: "Inter Tight", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffff;
+  background-image: url('/public/assets/images/background_iamge.png');
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.clipArt {
+  clip-path: polygon(18% 0, 84% 0, 100% 93%, 100% 100%, 0 99%, 0 92%);
+}
+
+.noScrollBar::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@layer components {
+  .heading {
+    @apply font-bold text-[38px] leading-[45.99px];
+  }
+  .subHeading {
+    @apply font-bold text-[26px] leading-[31.47px];
+  }
+  .paraBold {
+    @apply font-semibold text-sm leading-[16.94px];
+  }
+  .para {
+    @apply font-normal text-sm leading-[16.94px];
+  }
+  .buttonText {
+    @apply font-medium text-sm leading-[16.94px];
+  }
+}
+.light-blue-box-shadow {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.55);
+}
+.button-shadow {
+  box-shadow: 0px 4px 5px #000000;
+}
+
+select {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+}
