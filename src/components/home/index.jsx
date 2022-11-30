@@ -1,4 +1,5 @@
 import React from "react";
+import Collapseble from "./components/Collapseble";
 import Counter from "./components/counter";
 import GradientBorder from "./components/gradient-border";
 import NftSeries from "./components/nft-series";
@@ -126,14 +127,16 @@ All proposals will be reviewed & only proposals approved by Superwall's internal
         <div className="pt-[100px] ">
           <GradientBorder text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Super Deal &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" />
         </div>
-        <div className="w-[80%] mx-auto grid grid-cols-2 gap-20 pt-20">
-          <SuperDeal />
+        <div className="w-[80%] mx-auto  pt-20">
+          <Collapseble heading="Genesis Elemental Bricks" imgsrc="/assets/images/geb.png" imgWidth='w-[100px] h-[100px]'/>
+          <Collapseble heading="Some Other World" imgsrc="/assets/images/world.png" imgWidth='w-[100px] h-[100px]'/>
+          {/* <SuperDeal />
           <SuperDeal
             bgColor="bg-[rgba(220, 220, 220, 0.06)]"
             styles="shadow-6xl backdrop-blur-[52.7999px]"
           />
           <SuperDeal bgColor="bg-[#1F2634]" styles="bg-opacity-[50%]" />
-          <SuperDeal bgColor="bg-gradient-gray" />
+          <SuperDeal bgColor="bg-gradient-gray" /> */}
         </div>
         <div className="pt-[100px] ">
           <GradientBorder text="Team Members" />

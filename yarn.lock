@@ -3146,6 +3146,11 @@
     "chalk" "^2.4.1"
     "q" "^1.1.2"
 
+"collapsible-react-component@^0.0.6":
+  "integrity" "sha512-wBCgKh6oibBzs9DMQ5mhdzzoDnQbgTuFpxiCIeQnXgqzdHNc7DQGns2kLPKu0b+JWF9LRX7neVm8jf2GoHnTZQ=="
+  "resolved" "https://registry.npmjs.org/collapsible-react-component/-/collapsible-react-component-0.0.6.tgz"
+  "version" "0.0.6"
+
 "collect-v8-coverage@^1.0.0":
   "integrity" "sha512-iBPtljfCNcTKNAto0KEtDfZ3qzjJvqE3aTGZsbhjSBlorqpXJlaWWtPO35D+ZImoC3KWejX64o+yPGxhWSTzfg=="
   "resolved" "https://registry.npmjs.org/collect-v8-coverage/-/collect-v8-coverage-1.0.1.tgz"
@@ -7679,7 +7684,7 @@
     "clsx" "^1.1.0"
     "prop-types" "^15.5.0"
 
-"react@*", "react@^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>= 16.8 || 18.0.0", "react@>=16.8", "react@~15 || ~16 || ~17 || ~18":
+"react@*", "react@^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>= 16.8 || 18.0.0", "react@>=16.8", "react@~15 || ~16 || ~17 || ~18", "react@16 || 17 || 18":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
