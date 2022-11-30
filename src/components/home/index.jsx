@@ -38,7 +38,8 @@ export default function Home() {
           <p className="font-black leading-[56.32px] text-[64px] text-center text-white pt-24">
             SOFT MINT COUNTDOWN
           </p>
-        </div>
+        </div> 
+        {/* sdsadad */}
         <div className="w-[80%] flex justify-around items-center">
           <Counter counter="6" label="Days" />
           <Counter counter="13" label="Hours" />
