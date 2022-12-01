@@ -18,7 +18,7 @@ const Collapseble = ({heading,imgsrc,imgWidth}) => {
                   alt="superdeakneon "
                 />
               </div>
-              <p className="text-[26px] font-bold leading-[22px] text-white ml-8 ">
+              <p className="text-[12px] md:text-[26px] font-bold leading-[22px] text-white ml-8 ">
                 {heading}
               </p>
             </div>
@@ -43,14 +43,14 @@ const Collapseble = ({heading,imgsrc,imgWidth}) => {
             <div className="bg-gradient-to-r from-[#FF566B] via-[#702CD5] to-[#21E5F0] p-2 rounded-b-[30px] -mt-[7px]">
               <div className="flex justify-between items-center bg-[#202633] rounded-b-[30px] ">
                 <div className="mx-5 my-10">
-              <p className="text-2xl font-semibold">Super Pass = 1 Free GEB Mint</p>
-              <p className="text-[22px] font-medium mt-2">Free Mint Terms & Conditions: </p>
-              <p className="text-lg font-medium">✅ Super Pass Must be Delisted or listed above 1 Eth.</p>
-              <p className="text-lg font-medium">✅ 1st snapshot of holders will be taken 2 weeks after Mint</p>
-              <p className="text-lg font-medium">✅  2nd snapshot of holders to be taken before GEB Mint. </p>
-              <p className="text-lg font-medium">✅ If bought from Secondary Market, Holder can claim GEB OG Role and get 50% Discount on mint.</p>
-              <p className="text-sm font-normal">*2nd snapshot date and time TBD</p>
-              <p className="text-sm font-normal">**Current Holder Screenshot will be taken and used to identify the holders who will be eligible for the 50% discount </p>
+              <p className="text-lg md:text-2xl font-semibold">Super Pass = 1 Free GEB Mint</p>
+              <p className="text-[17px] md:text-[22px] font-medium mt-2">Free Mint Terms & Conditions: </p>
+              <p className="text-[14px] md:text-lg font-medium">✅ Super Pass Must be Delisted or listed above 1 Eth.</p>
+              <p className="text-[14px] md:text-lg font-medium">✅ 1st snapshot of holders will be taken 2 weeks after Mint</p>
+              <p className="text-[14px] md:text-lg font-medium">✅  2nd snapshot of holders to be taken before GEB Mint. </p>
+              <p className="text-[14px] md:text-lg font-medium">✅ If bought from Secondary Market, Holder can claim GEB OG Role and get 50% Discount on mint.</p>
+              <p className="text-[11px] md:text-sm font-normal">*2nd snapshot date and time TBD</p>
+              <p className="text-[11px] md:text-sm font-normal">**Current Holder Screenshot will be taken and used to identify the holders who will be eligible for the 50% discount </p>
               </div>
               <div >
               <img src="/assets/images/rocks.png" alt="rock " />

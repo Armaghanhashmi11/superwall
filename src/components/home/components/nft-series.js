@@ -7,7 +7,7 @@ const NftSeries = ({imgsrc,text,styles,width}) => {
         <img className={` ${width}`} src={imgsrc} alt="passlogo" />
       </div>
       <div>
-        <p className={`text-[22px] font-medium leading-6 text-white text-center ${styles}`}>
+        <p className={`text-[18px] md:text-[22px] font-medium leading-6 text-white text-center ${styles}`}>
           {text}
         </p>
       </div>
