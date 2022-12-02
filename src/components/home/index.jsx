@@ -15,7 +15,7 @@ import UtilityPerk from "./components/utility-perk";
 export default function Home() {
   const [timer, setTimer] = useState(false);
   return (
-    <div className="w-[90%] mx-5 my-12">
+    <div className="w-[90%] mx-auto my-12">
       <div className="flex flex-col justify-center items-center">
         <div>
           <img
