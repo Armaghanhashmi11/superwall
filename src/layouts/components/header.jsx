@@ -10,7 +10,8 @@ export default function Header() {
       </div>
       <div className="lg:flex lg:items-center hidden ">
         <ul className="flex">
-          <li className="text-lg font-medium leading-[27px] text-center text-[#DDDDDD] ml-10">home</li>
+          <a href="/">
+          <li className="text-lg font-medium leading-[27px] text-center text-[#DDDDDD] ml-10">home</li></a>
           <li className="text-lg font-medium leading-[27px] text-center text-[#DDDDDD] ml-10">About</li>
           <li className="text-lg font-medium leading-[27px] text-center text-[#DDDDDD] ml-10">Team</li>
           <li className="text-lg font-medium leading-[27px] text-center text-[#DDDDDD] ml-10">Roadmap</li>
@@ -20,7 +21,7 @@ export default function Header() {
         <img className="ml-7" src="assets/images/instalogo.png" alt="instalogo"/>
         <Button text="join discord"/>
       </div>
-      <div>
+      <div className="block lg:hidden">
       <img src="assets/images/menu_hamburger.png"  alt="menu_hamburger"/>
       </div>
     </div>

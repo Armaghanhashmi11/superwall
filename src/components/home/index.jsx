@@ -1,5 +1,7 @@
+import Button from "components/common/button";
 import { FaqData } from "constant/faq_data";
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Collapseble from "./components/Collapseble";
 import Counter from "./components/counter";
 import Faq from "./components/Faq";
@@ -11,26 +13,10 @@ import TeamMembers from "./components/team-members";
 import UtilityPerk from "./components/utility-perk";
 
 export default function Home() {
+  const [timer, setTimer] = useState(false);
   return (
     <div className="w-[90%] mx-5 my-12">
       <div className="flex flex-col justify-center items-center">
-        <img
-          className="w-[566px] mx-auto"
-          src="/assets/images/superwall.png"
-          alt="superwall"
-        />
-        <div>
-          <p className="font-bold text-[50px] text-center leading-[44px] text-white pt-8">
-            COMING SOON
-          </p>
-        </div>
-        <div>
-          <img
-            className="w-[1050px] mx-auto pt-14"
-            src="/assets/images/neon_frame.png"
-            alt="neno"
-          />
-        </div>
         <div>
           <img
             className="w-[688.61px] mx-auto pt-36"
@@ -38,24 +24,38 @@ export default function Home() {
             alt="superpass"
           />
         </div>
-        <div>
-          <p className="font-black leading-[56.32px] text-[32px] lg:text-[64px] text-center text-white pt-24">
-          PHASE 1 MINT COUNTDOWN
-          </p>
-        </div>
-        {/* sdsadad */}
-        <div className="w-full lg:w-[80%] flex justify-around items-center">
-          <Counter counter="6" label="Days" />
-          <Counter counter="13" label="Hours" />
-          <Counter counter="47" label="Minutes" />
-          <Counter counter="52" label="Seconds" />
-        </div>
+        {timer === "timer" ? (
+          <>
+            {" "}
+            <div>
+              <p className="font-black leading-[56.32px] text-[32px] lg:text-[64px] text-center text-white pt-24">
+                PHASE 1 MINT COUNTDOWN
+              </p>
+            </div>
+            {/* sdsadad */}
+            <div className="w-full lg:w-[80%] flex justify-around items-center">
+              <Counter counter="6" label="Days" />
+              <Counter counter="13" label="Hours" />
+              <Counter counter="47" label="Minutes" />
+              <Counter counter="52" label="Seconds" />
+            </div>
+          </>
+        ) : (
+          <div>
+            <img src="/assets/images/Supergif.png" alt="gif" />
+            <a href="/mint" alt='mint'>
+            <div className="pt-10 w-56 mx-auto cursor-pointer">
+              <Button text="Mint Now" />
+            </div>
+            </a>
+          </div>
+        )}
         <div className="py-20">
-          <img src="/assets/images/supperwallnftseries.png" alt="seriwe"/>
+          <img src="/assets/images/supperwallnftseries.png" alt="seriwe" />
         </div>
-          <p className="text-2xl font-normal leading-9 text-center  text-white pt-7 hidden md:block">
-            The Ultimate pass for the complete super wall nft series.{" "}
-          </p>
+        <p className="text-2xl font-normal leading-9 text-center  text-white pt-7 hidden md:block">
+          The Ultimate pass for the complete super wall nft series.{" "}
+        </p>
         <div className="w-full grid grid-cols-2  md:w-[80%] md:flex md:justify-around md:items-center pt-20">
           <NftSeries
             imgsrc="/assets/images/superpasslogo.png"
@@ -81,7 +81,7 @@ export default function Home() {
         <div className="pt-[100px]">
           <GradientBorder text="Utility and Perks" />
         </div>
-        <div className="w-[380px] md:w-[90%] md:mx-auto flex md:grid   md:grid-cols-2  lg:grid-cols-3 gap-14 pt-20 overflow-x-scroll">
+        <div className="w-[380px] md:w-[90%] md:mx-auto flex md:grid   md:grid-cols-2  lg:grid-cols-3 gap-14 pt-20 overflow-x-scroll md:overflow-hidden">
           <div className="bg-[#202633] rounded-[40px] shadow-[0px 4px 24px rgba(0, 0, 0, 0.25)] ">
             <div className="w-[374px] h-[280px] px-4 py-5  md:h-full md:w-full md:py-10 md:px-8">
               <p className="font-semibold text-2xl leading-9 text-white">
@@ -129,7 +129,7 @@ All proposals will be reviewed & only proposals approved by Superwall's internal
           <GradientBorder text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Super Deal &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" />
         </div>
         <div className="w-[80%] mx-auto  pt-20">
-          <SuperSpaceHolder/>
+          <SuperSpaceHolder />
           <Collapseble
             heading="Genesis Elemental Bricks"
             imgsrc="/assets/images/geb.png"
@@ -155,17 +155,21 @@ All proposals will be reviewed & only proposals approved by Superwall's internal
           <TeamMembers />
         </div>
         <div className="w-[90%] md:w-[80%] mx-auto  pt-32">
-       < div>
-        <p className="text md:text-[48px] leading-10 font-bold text-center text-[#DFDFDF]">
-          Frequently Asked Questions
-        </p>
-      </div>
-      <div className="h-[500px] overflow-y-auto">
-        {FaqData.map((items, index) => (
-          <Faq  question={items.question} answer={items.answer} key={index}/>
-        ))}
+          <div>
+            <p className="text md:text-[48px] leading-10 font-bold text-center text-[#DFDFDF]">
+              Frequently Asked Questions
+            </p>
+          </div>
+          <div className="h-[500px] overflow-y-auto">
+            {FaqData.map((items, index) => (
+              <Faq
+                question={items.question}
+                answer={items.answer}
+                key={index}
+              />
+            ))}
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );
