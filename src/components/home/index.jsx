@@ -81,7 +81,7 @@ export default function Home() {
         <div className="pt-[100px]">
           <GradientBorder text="Utility and Perks" />
         </div>
-        <div className="w-[380px] md:w-[90%] md:mx-auto flex md:grid   md:grid-cols-2  lg:grid-cols-3 gap-14 pt-20 overflow-x-scroll md:overflow-hidden">
+        <div className="w-[300px] md:w-[90%] md:mx-auto flex md:grid   md:grid-cols-2  lg:grid-cols-3 gap-14 pt-20 overflow-x-scroll md:overflow-hidden">
           <div className="bg-[#202633] rounded-[40px] shadow-[0px 4px 24px rgba(0, 0, 0, 0.25)] ">
             <div className="w-[374px] h-[280px] px-4 py-5  md:h-full md:w-full md:py-10 md:px-8">
               <p className="font-semibold text-2xl leading-9 text-white">
@@ -151,7 +151,7 @@ All proposals will be reviewed & only proposals approved by Superwall's internal
         <div className="pt-[100px] ">
           <GradientBorder text="Team Members" />
         </div>
-        <div className="w-full  md:w-[90%] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-20 pt-20">
+        <div className="w-full  md:w-[90%]  text-center  mx-auto grid grid-cols-2 lg:grid-cols-4 gap-20 pt-20">
           <TeamMembers />
         </div>
         <div className="w-[90%] md:w-[80%] mx-auto  pt-32">

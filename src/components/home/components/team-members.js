@@ -7,8 +7,8 @@ const TeamMembers = () => {
       <>
 {TeamMemberData.map((items,index)=>(
   <div className=" rounded-[30px] " key={index}>
-      <div className=" flex justify-center items-center w-48 h-48 mx-auto  rounded-full  mt-[-63px]  from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r">
-      <div className="bg-[#1F2634] p-2 w-44 h-44 mx-auto rounded-full">
+      <div className=" flex justify-center items-center w-28 h-28 md:w-48 md:h-48 mx-auto  rounded-full  mt-[-63px]  from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r">
+      <div className="bg-[#1F2634] p-2 w-24 h-24 md:w-44 md:h-44 mx-auto rounded-full">
       <img
       
         src={items.imgsrc}
@@ -16,7 +16,7 @@ const TeamMembers = () => {
       />
       </div>
       </div>
-      <div className="flex justify-center items-center pt-7">
+      <div className="flex justify-center items-center text-center pt-7">
         <img
           className="w-[25px] "
           src="/assets/images/twitterlogo.png"
