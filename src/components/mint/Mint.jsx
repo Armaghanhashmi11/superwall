@@ -29,8 +29,8 @@ export default function Mint() {
   return (
     <div className="w-[90%] mx-auto my-20">
       <div className="flex flex-col lg:flex-row  lg:justify-between items-center w-full">
-        <div className="lg:w-[45%]">
-          <img src="/assets/images/Supergif.png" alt="gif" />
+        <div className="lg:w-[45%] lg:h-[545.73px]">
+          <img src="/assets/images/supassgif.gif" alt="gif" />
         </div>
         <div className="lg:w-[45%] text-center pt-5 lg:pt-0">
           <p className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-[#FF566B] via-[#633CFD]  from-[#21E5F0]">
@@ -69,7 +69,7 @@ export default function Mint() {
             }}
             className="cursor-pointer bg-gradient-to-r from-[#FF566B] via-[#702CD5] to-[#21E5F0]  rounded-full w-[30%] mx-auto p-2 mt-5"
           >
-            <p className="text-lg ">Mint</p>
+            <p className="text-lg font-bold ">Mint</p>
           </div>
           <div className="flex justify-evenly items-center w-[30%] mx-auto mt-5">
             <div>

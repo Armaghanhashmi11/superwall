@@ -7,7 +7,7 @@ const UtilityPerk = ({imgsrc,heading,text}) => {
         <div className="bg-gradient-to-t from-indigo-500 via-purple-500 to-pink-500 w-[56px] rounded-lg p-5 px-4">
           <img src={imgsrc} alt="hand" />
         </div>
-        <p className="font-semibold text-2xl leading-9 text-white pt-4">
+        <p className="font-semibold text-[26px] leading-9 text-white pt-4">
           {heading}
         </p>
         <p className="font-normal text-base leading-6 text-white pt-2">

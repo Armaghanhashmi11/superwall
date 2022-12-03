@@ -10,10 +10,15 @@ import NftSeries from "./components/nft-series";
 import SuperSpaceHolder from "./components/SuperSpaceHolder";
 // import SuperDeal from "./components/super-deal";
 import TeamMembers from "./components/team-members";
+import { useReactCountdown } from "./components/timer";
 import UtilityPerk from "./components/utility-perk";
 
 export default function Home() {
   const [timer, setTimer] = useState(false);
+  let dateToEndCountdownAt = "December 3, 2022 23:47:00";
+  const { days, hours, minutes, seconds, hidePresaleSection } =
+    useReactCountdown(dateToEndCountdownAt);
+  console.log(hidePresaleSection);
   return (
     <div className="w-[90%] mx-auto my-12">
       <div className="flex flex-col justify-center items-center">
@@ -24,7 +29,7 @@ export default function Home() {
             alt="superpass"
           />
         </div>
-        {timer === "timer" ? (
+        {!hidePresaleSection ? (
           <>
             {" "}
             <div>
@@ -34,37 +39,42 @@ export default function Home() {
             </div>
             {/* sdsadad */}
             <div className="w-full lg:w-[80%] flex justify-around items-center">
-              <Counter counter="6" label="Days" />
-              <Counter counter="13" label="Hours" />
-              <Counter counter="47" label="Minutes" />
-              <Counter counter="52" label="Seconds" />
+              <Counter counter={days} label="Days" />
+              <Counter counter={hours} label="Hours" />
+              <Counter counter={minutes} label="Minutes" />
+              <Counter counter={seconds} label="Seconds" />
             </div>
           </>
         ) : (
           <div>
-            <img src="/assets/images/Supergif.png" alt="gif" />
-            <a href="/mint" alt='mint'>
-            <div className="pt-10 w-56 mx-auto cursor-pointer">
-              <Button text="Mint Now" />
+            <div className="bg-gradient-to-r from-[#FF566B] via-[#702CD5] to-[#21E5F0] p-2 rounded-2xl">
+            <img className="w-[725px] h-[481px]" src="/assets/images/supassgif.gif" alt="gif" />
             </div>
+            <a href="/mint" alt="mint">
+              <div className="pt-10 w-56 mx-auto cursor-pointer">
+                <Button text="Mint Now" />
+              </div>
             </a>
           </div>
         )}
         <div className="py-20">
-          <img src="/assets/images/supperwallnftseries.png" alt="seriwe" />
+          <img
+            src="/assets/images/supperwallnftseries.png"
+            alt="supperwallnftseries"
+          />
         </div>
-        <p className="text-2xl font-normal leading-9 text-center  text-white pt-7 hidden md:block">
-          The Ultimate pass for the complete super wall nft series.{" "}
+        <p className="text-2xl font-bold leading-9 text-center  text-white pt-7 hidden md:block">
+          The Gateway to your full Web3 Entertainment Experience
         </p>
         <div className="w-full grid grid-cols-2  md:w-[80%] md:flex md:justify-around md:items-center pt-20">
           <NftSeries
             imgsrc="/assets/images/superpasslogo.png"
-            text="Supply 555"
+            text="Supply 1111"
             width="w-[180px]"
           />
           <NftSeries
             imgsrc="/assets/images/geb.png"
-            text="Supply 5,555"
+            text="Supply 5,550"
             width="w-[180px]"
           />
           <NftSeries
@@ -82,7 +92,7 @@ export default function Home() {
           <GradientBorder text="Utility and Perks" />
         </div>
         <div className="w-[300px] md:w-[90%] md:mx-auto flex md:grid   md:grid-cols-2  lg:grid-cols-3 gap-14 pt-20 overflow-x-scroll md:overflow-hidden">
-          <div className="bg-[#202633] rounded-[40px] shadow-[0px 4px 24px rgba(0, 0, 0, 0.25)] ">
+          <div className=" bg-[#202633] rounded-[40px] shadow-[0px 4px 24px rgba(0, 0, 0, 0.25)] ">
             <div className="w-[374px] h-[280px] px-4 py-5  md:h-full md:w-full md:py-10 md:px-8">
               <p className="font-semibold text-2xl leading-9 text-white">
                 GEB & SOW Free Mint
@@ -120,7 +130,7 @@ All proposals will be reviewed & only proposals approved by Superwall's internal
             text="(3) Super Subscriptions that each have a 3 month subscription plan that can be used to subscribe to any Super on our superwall platform to view their contents."
           />
           <UtilityPerk
-            imgsrc="/assets/images/addition.png"
+            imgsrc="/assets/images/annual.png"
             heading="Annual Gala Dinner & Award Ceremony"
             text="All Super Pass Holders will be given an invitation to our Annaul Gala Dinner & Award Ceremony."
           />
@@ -131,6 +141,8 @@ All proposals will be reviewed & only proposals approved by Superwall's internal
         <div className="w-[80%] mx-auto  pt-20">
           <SuperSpaceHolder />
           <Collapseble
+            firstitems={true}
+            firstimage={true}
             heading="Genesis Elemental Bricks"
             imgsrc="/assets/images/geb.png"
             imgWidth="w-[100px] h-[100px]"
@@ -148,7 +160,7 @@ All proposals will be reviewed & only proposals approved by Superwall's internal
           <SuperDeal bgColor="bg-[#1F2634]" styles="bg-opacity-[50%]" />
           <SuperDeal bgColor="bg-gradient-gray" /> */}
         </div>
-        <div className="pt-[100px] ">
+        <div className="pt-[100px] pb-[80px] ">
           <GradientBorder text="Team Members" />
         </div>
         <div className="w-full  md:w-[90%]  text-center  mx-auto grid grid-cols-2 lg:grid-cols-4 gap-20 pt-20">
@@ -156,7 +168,7 @@ All proposals will be reviewed & only proposals approved by Superwall's internal
         </div>
         <div className="w-[90%] md:w-[80%] mx-auto  pt-32">
           <div>
-            <p className="text md:text-[48px] leading-10 font-bold text-center text-[#DFDFDF]">
+            <p className="text md:text-[48px] leading-10 font-bold text-center text-[#DFDFDF] mb-10">
               Frequently Asked Questions
             </p>
           </div>

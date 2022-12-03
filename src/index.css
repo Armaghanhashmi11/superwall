@@ -9,6 +9,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #ffff;
   background-image: url('/public/assets/images/background_iamge.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
 }
 
@@ -69,4 +71,79 @@ select {
 ::-webkit-scrollbar-thumb {
   background-color: #B5A3FF;
   border-radius: 7.48437px;
+}
+.red-box-shadow {
+  /* box-shadow: 0px -1px 14px 6px #FE9325;
+  -webkit-box-shadow: 0px -1px 14px 6px #FE9325;
+  -moz-box-shadow: 0px -1px 14px 6px #FE9325; */
+  box-shadow: /* ie */
+  0px -15px 15px -6px  rgba(255, 86, 107, 1), /* top - THE RED SHADOW */
+  0px  5px  15px  0px  rgba(112, 44, 213, 1), /* bottom */
+  8px  10px  15px  0px  rgba(33, 229, 240, 1), /* right */
+ -5px  10px  15px  0px  rgba(255, 86, 107, 1); /* left */
+
+}
+.team-shadow {
+  /* box-shadow: 0px -1px 14px 6px #FE9325;
+  -webkit-box-shadow: 0px -1px 14px 6px #FE9325;
+  -moz-box-shadow: 0px -1px 14px 6px #FE9325; */
+  box-shadow: /* ie */
+  0px -15px 15px -6px  rgba(255, 86, 107, 1), /* top - THE RED SHADOW */
+  0px  5px  15px  0px  rgba(112, 44, 213, 1), /* bottom */
+  4px  0px  15px  0px  rgba(33, 229, 240, 1), /* right */
+ -5px  5px  15px  0px  rgba(255, 86, 107, 1); /* left */
+ 
+
+}
+.red-box-shadow2 {
+  box-shadow: 0px -1px 14px 6px rgba(255, 0, 23, 0.93);
+  -webkit-box-shadow: 0px -1px 14px 6px rgba(255, 0, 23, 0.93);
+  -moz-box-shadow: 0px -1px 14px 6px rgba(255, 0, 23, 0.93);
+}
+.orange-box-shadow {
+  box-shadow: 0px -1px 14px 6px #FE9325;
+  -webkit-box-shadow: 0px -1px 14px 6px #FE9325;
+  -moz-box-shadow: 0px -1px 14px 6px #FE9325;
+}
+.green-box-shadow {
+  box-shadow: 0px -1px 14px 6px #39B54A;
+  -webkit-box-shadow: 0px -1px 14px 6px #39B54A;
+  -moz-box-shadow: 0px -1px 14px 6px #39B54A;
+}
+.black-button-shadow {
+  -moz-box-shadow: 2px 6px 2px #101010;
+  -webkit-box-shadow: 2px 6px 2px #101010;
+  box-shadow: 2px 6px 2px #101010;
+}
+.borderlinear{
+  text-align:center;
+  border-bottom: 6px solid transparent;
+  border-image: linear-gradient( to left, #FF566B, #702CD5, #21E5F0);
+  border-image-slice: 1;
+  border-radius: 10px !important;
+  width:100%;
+}
+
+.box:before {
+ 
+  background: linear-gradient(-45deg, #03E5B7 0%, #037ADE 100% );
+  filter: blur(20px);
+  opacity: var(0.7);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.box::after {
+ 
+  background: inherit;
+  border-radius: inherit;
+}
+      
+a {
+  all: unset;
 }
