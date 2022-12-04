@@ -8,7 +8,7 @@ const SuperSpaceHolder = () => {
           <img className='w-[80%] mx-auto' src='/assets/images/superdealneon.png' alt='superdeakneon'/>
           <p className='font-medium text-sm md:text-[27px] leading-[40.5px] text-center text-white'>🔥 “Get 3 For The Price Of 1” 🔥</p>
           <p className='font-medium text-sm md:text-[27px] leading-[40.5px] text-center text-white'>Super Pass  -{'>'}   Genesis Elemental Bricks  -{'>'}   Some Other World</p>
-          <p className='font-lato font-normal  text-lg md:text-[39px] text-center text-white pt-2 pb-[55px]'>Total  combined  value  of  Nearly  1  Eth!</p>
+          <p className='font-lato font-normal  text-lg md:text-[39px] text-center text-white pt-3 pb-[55px] racingfont'>Total  combined  value  of  Nearly  1  Eth!</p>
         </div>
       </div>
       </div>

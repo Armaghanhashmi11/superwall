@@ -14,8 +14,7 @@ import { useReactCountdown } from "./components/timer";
 import UtilityPerk from "./components/utility-perk";
 
 export default function Home() {
-  const [timer, setTimer] = useState(false);
-  let dateToEndCountdownAt = "December 3, 2022 23:47:00";
+  let dateToEndCountdownAt = "December 4, 2022 23:47:00";
   const { days, hours, minutes, seconds, hidePresaleSection } =
     useReactCountdown(dateToEndCountdownAt);
   console.log(hidePresaleSection);
@@ -47,8 +46,12 @@ export default function Home() {
           </>
         ) : (
           <div>
-            <div className="bg-gradient-to-r from-[#FF566B] via-[#702CD5] to-[#21E5F0] p-2 rounded-2xl">
-            <img className="w-[725px] h-[481px]" src="/assets/images/supassgif.gif" alt="gif" />
+            <div className="red-box-shadow border-2 border-white  rounded-2xl">
+              <img
+                className="w-[725px] h-[481px] rounded-2xl"
+                src="/assets/images/supassgif.gif"
+                alt="gif"
+              />
             </div>
             <a href="/mint" alt="mint">
               <div className="pt-10 w-56 mx-auto cursor-pointer">
@@ -92,7 +95,7 @@ export default function Home() {
           <GradientBorder text="Utility and Perks" />
         </div>
         <div className="w-[300px] md:w-[90%] md:mx-auto flex md:grid   md:grid-cols-2  lg:grid-cols-3 gap-14 pt-20 overflow-x-scroll md:overflow-hidden">
-          <div className=" bg-[#202633] rounded-[40px] shadow-[0px 4px 24px rgba(0, 0, 0, 0.25)] ">
+          <div className="hidden ml-5 bg-[#202633] z-10 rounded-[40px] border-2 border-white red-box-shadow shadow-[0px 4px 24px rgba(0, 0, 0, 0.25)] ">
             <div className="w-[374px] h-[280px] px-4 py-5  md:h-full md:w-full md:py-10 md:px-8">
               <p className="font-semibold text-2xl leading-9 text-white">
                 GEB & SOW Free Mint
@@ -108,6 +111,13 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <UtilityPerk
+            imgsrc="/assets/images/Union.png"
+            heading="GEB & SOW Free Mint"
+            text="Only Available to Super Pass Holders!
+            Super Pass Holders can be eligible for the following free mints:GEB Free Mint x1
+            SOW Free Mint x1 *T&Cs Applied*"
+          />
           <UtilityPerk
             imgsrc="/assets/images/hand.png"
             heading="Super Collab"

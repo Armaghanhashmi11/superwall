@@ -15,7 +15,7 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
         >
           <div className="flex   justify-between items-center bg-[#202633] rounded-[30px]">
             <div className="flex items-center ">
-              <div className="border-[#FF566B] border-r-8">
+              <div className="right-gradient-bdr ">
                 <img className={imgWidth} src={imgsrc} alt="superdeakneon " />
               </div>
               <p className="text-[12px] md:text-[26px] font-bold leading-[22px] text-white ml-8 ">

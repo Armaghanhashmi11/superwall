@@ -30,7 +30,7 @@ export default function Mint() {
     <div className="w-[90%] mx-auto my-20">
       <div className="flex flex-col lg:flex-row  lg:justify-between items-center w-full">
         <div className="lg:w-[45%] lg:h-[545.73px]">
-          <img src="/assets/images/supassgif.gif" alt="gif" />
+          <img className="border-2 border-white rounded-2xl red-box-shadow" src="/assets/images/supassgif.gif" alt="gif" />
         </div>
         <div className="lg:w-[45%] text-center pt-5 lg:pt-0">
           <p className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-[#FF566B] via-[#633CFD]  from-[#21E5F0]">

@@ -1,6 +1,19 @@
-import React from "react";
+import React ,{ useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 const Footer = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('superwall_321', 'Home_template_du53atu', form.current, '8TBp7G5GfyBEqa-Wg')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <>
       <div className="grid justify-center items-center lg:grid-cols-5 gap-20 bg-[#12002D]">
@@ -86,21 +99,21 @@ const Footer = () => {
             testing and more!{" "}
           </p>
           <div className="w-[70%] mx-auto md:w-full bg-gradient-to-r team-shadow border-4 border-white p-1 rounded-full">
-            <div className="bg-[#12002D] flex justify-evenly px-2 items-center rounded-full">
+            <form className="bg-[#12002D] flex justify-evenly px-2 items-center rounded-full" ref={form} onSubmit={sendEmail}>
               <div>
                 <img src="/assets/images/sms.png" alt="website" />
               </div>
               <div>
                 <input
                   placeholder="Enter your email"
-                  type="text"
+                  type="email" name="user_email"
                   className="bg-[#12002D] outline-none block w-full p-4"
                 />
               </div>
               <div>
-                <p className="cursor-pointer">Subscribe</p>
+                <input type="submit" value="Subscribe" className="cursor-pointer"/>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
