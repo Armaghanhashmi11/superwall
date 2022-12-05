@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Collapsible } from "collapsible-react-component";
 import "collapsible-react-component/dist/index.css";
 const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="w-full  mt-10 p-2">

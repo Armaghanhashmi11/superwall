@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const UtilityPerk = ({ imgsrc, heading, text,Enter,Leave }) => {
   // const [isShown, setIsShown] = useState(false);
@@ -9,10 +9,10 @@ const UtilityPerk = ({ imgsrc, heading, text,Enter,Leave }) => {
        
           {/* )} */}
     <div
-      className="bg-[#202633] rounded-[40px] shadow-[0px 4px 24px rgba(0, 0, 0, 0.25)] gradientshadow hover:border-2 hover:border-white m-3"
+      className="bg-[#202633] rounded-[40px] shadow-[0px 4px 24px rgba(0, 0, 0, 0.25)] gradientshadow hover:border-2 hover:border-white mx-3 lg:m-3"
       // onMouseEnter={()=>setIsShown(true)}
     >
-      <div className="w-[300px] h-[234px] px-4 py-5   md:h-full md:w-full  md:py-10 md:px-8">
+      <div className="w-[300px] h-auto px-4 py-5   md:h-full md:w-full  md:py-10 md:px-8">
         <div className="bg-gradient-to-t from-indigo-500 via-purple-500 to-pink-500 w-[56px] rounded-lg p-5 px-4">
           <img src={imgsrc} alt="hand" />
         </div>

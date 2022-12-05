@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import Modal from "react-modal";
-import SecModal from "./secmodal";
 
 const customStyles = {
   content: {
@@ -29,7 +28,7 @@ const MessageModal = ({
   return (
     <Modal isOpen={openModal} style={customStyles} onRequestClose={closeModal}>
       <div className=" rounded-xl z-20">
-        <div className="  p-2 bg-gradient-to-r from-[#FF566B] via-[#702CD5] to-[#21E5F0] w-[600px] mx-auto rounded-[36px] shadow-6xl">
+        <div className="  p-1 bg-white red-box-shadow mx-2 w-auto md:w-[600px] md:mx-auto rounded-[36px] shadow-6xl">
           <div className="bg-[#283142] rounded-[36px]">
             <div className="w-full text-[29.67px] text-center font-semibold pt-5">
               Connect Your Wallet

@@ -173,3 +173,10 @@ a {
   border-image: 
   linear-gradient(#F1ACC7, #F4C0D5, ) 0 100%;
 }
+.neonborder{
+  background-image: url('/public/assets/images/neonborder.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}

@@ -1,8 +1,11 @@
 import { useState } from "react";
 import MessageModal from "./component/modal";
 import SecModal from "./component/secmodal";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function Mint() {
+  AOS.init();
+
   const [metamaskopenModal, setmetamaskopenModal] = useState(false);
   function closeModals() {
     setmetamaskopenModal(false);
@@ -27,13 +30,21 @@ export default function Mint() {
     setCounter((count) => count - 1);
   };
   return (
-    <div className="w-[90%] mx-auto my-20">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      className="max-w-[1500px] w-[90%] mx-auto my-20"
+    >
       <div className="flex flex-col lg:flex-row  lg:justify-between items-center w-full">
-        <div className="lg:w-[45%] lg:h-[545.73px]">
-          <img className="border-2 border-white rounded-2xl red-box-shadow" src="/assets/images/supassgif.gif" alt="gif" />
+        <div className="lg:w-[45%] lg:h-auto">
+          <img
+            className="border-2 border-white rounded-2xl red-box-shadow"
+            src="/assets/images/supassgif.gif"
+            alt="gif"
+          />
         </div>
         <div className="lg:w-[45%] text-center pt-5 lg:pt-0">
-          <p className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-[#FF566B] via-[#633CFD]  from-[#21E5F0]">
+          <p className="text-5xl font-bold text-transparent  bg-clip-text bg-gradient-to-r to-[#FF566B] via-[#633CFD]  from-[#21E5F0]">
             Genesis Super
             <br /> Pass
           </p>
@@ -67,11 +78,11 @@ export default function Mint() {
             onClick={() => {
               setopenModal(!openModal);
             }}
-            className="cursor-pointer bg-gradient-to-r from-[#FF566B] via-[#702CD5] to-[#21E5F0]  rounded-full w-[30%] mx-auto p-2 mt-5"
+            className="cursor-pointer bg-gradient-to-r  from-[#FF566B] via-[#702CD5] to-[#21E5F0]  rounded-full  w-[50%] md:w-[20%] lg:w-[30%] mx-auto p-2 mt-5"
           >
             <p className="text-lg font-bold ">Mint</p>
           </div>
-          <div className="flex justify-evenly items-center w-[30%] mx-auto mt-5">
+          <div className="flex justify-evenly items-center w-[50%] md:w-[20%] lg:w-[30%] mx-auto mt-5">
             <div>
               <img
                 src="/assets/images/etherscan_circle.png"
