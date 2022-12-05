@@ -1,5 +1,5 @@
-import React ,{ useRef } from "react";
-import emailjs from '@emailjs/browser';
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Footer = () => {
   const form = useRef();
@@ -7,17 +7,26 @@ const Footer = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('superwall_321', 'Home_template_du53atu', form.current, '8TBp7G5GfyBEqa-Wg')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "superwall_321",
+        "Home_template_du53atu",
+        form.current,
+        "8TBp7G5GfyBEqa-Wg"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
   };
   return (
-    <div className="bg-[#12002D]">
-      <div className="max-w-[1500px] mx-auto grid justify-center items-center lg:grid-cols-5 gap-20 bg-[#12002D]">
-        <div className=" col-span-2 lg:col-span-1 pt-16 lg:pl-10 lg:pb-10">
+    <div className="bg-[#12002D] pt-16">
+      <div className="max-w-[1500px] mx-auto grid justify-center  lg:grid-cols-5 bg-[#12002D]">
+        <div className=" col-span-2 lg:col-span-1 pb-8 lg:pt-16 lg:pl-10 lg:pb-10">
           <div className="flex justify-center items-center lg:justify-start ">
             <img
               className="w-[157px] "
@@ -30,20 +39,36 @@ const Footer = () => {
           </p>
           <div className="flex justify-center lg:justify-start items-center  pl-0 cursor-pointer">
             <a href="https://twitter.com/superwallglobal">
-              <img className="max-w-none mr-2" src="/assets/images/neon_twitter.png" alt="twit" />
+              <img
+                className="max-w-none mr-2"
+                src="/assets/images/neon_twitter.png"
+                alt="twit"
+              />
             </a>
             <a href="https://discord.gg/cRbAWmADjv">
-              <img className="max-w-none mr-2" src="/assets/images/neon_discord.png" alt="discord" />
+              <img
+                className="max-w-none mr-2"
+                src="/assets/images/neon_discord.png"
+                alt="discord"
+              />
             </a>
             <a href="https://www.instagram.com/superwall_official/">
-              <img className="max-w-none mr-2" src="/assets/images/neon_insta.png" alt="insta" />
+              <img
+                className="max-w-none mr-2"
+                src="/assets/images/neon_insta.png"
+                alt="insta"
+              />
             </a>
             <a href="https://www.superwall.io/">
-              <img className="max-w-none mr-2" src="/assets/images/neon_website.png" alt="website" />
+              <img
+                className="max-w-none mr-2"
+                src="/assets/images/neon_website.png"
+                alt="website"
+              />
             </a>
           </div>
         </div>
-        <div className="pt-16 lg:pl-20 lg:pb-10">
+        <div className="pt-0 lg:pt-16 mt-4 lg:pl-20 lg:pb-10">
           <p className="text-[17px] font-bold leading-5 text-white text-center lg:text-left">
             Superwall.co
           </p>
@@ -60,7 +85,7 @@ const Footer = () => {
             Frequently Asked Questions
           </p>
         </div>
-        <div className=" pt-16 lg:pl-16 lg:pb-10">
+        <div className="  lg:pl-16 lg:pb-10 mt-4">
           <p className="text-[17px] font-bold leading-5 text-white text-center lg:text-left">
             Superwall.co
           </p>
@@ -90,7 +115,7 @@ const Footer = () => {
             </p>
           </a>
         </div>
-        <div className="col-span-2 pt-16 lg:pr-20 pb-8 lg:pb-10">
+        <div className="col-span-2 pt-8 lg:pt-0 lg:pr-20 pb-8 lg:pb-10">
           <p className="text-[30px] font-bold leading-10 text-white text-center px-2 lg:text-left">
             Sign-up for Whitelist & OG
           </p>
@@ -99,24 +124,39 @@ const Footer = () => {
             testing and more!{" "}
           </p>
           <div className="w-[70%] mx-auto lg:w-[90%] lg:ml-0 lg:mr-0  relative  rounded-full">
-            <form className="bg-[#12002D] flex justify-evenly px-2 items-center rounded-full" ref={form} onSubmit={sendEmail}>
+            <form
+              className="bg-[#12002D] flex justify-evenly px-7 items-center rounded-full"
+              ref={form}
+              onSubmit={sendEmail}
+            >
               <div>
                 <img src="/assets/images/sms.png" alt="website" />
               </div>
               <div>
                 <input
                   placeholder="Enter your email"
-                  type="email" name="user_email"
+                  type="email"
+                  name="user_email"
                   className="bg-[#12002D] outline-none block w-full p-4"
                 />
               </div>
               <div className="cursor-pointer">
-                <input type="submit" value="Subscribe" className="font-bold cursor-pointer"/>
+                <input
+                  type="submit"
+                  value="Subscribe"
+                  className="font-bold cursor-pointer"
+                />
               </div>
             </form>
-            <div className="absolute w-full h-full top-0" >
-        <img className="w-full h-full " width={'100%'} height='100%' alt="neon" src='/assets/images/subsribe.png'/>
-        </div>
+            <div className="absolute w-full h-full top-0">
+              <img
+                className="w-full h-full "
+                width={"100%"}
+                height="100%"
+                alt="neon"
+                src="/assets/images/subsribe.png"
+              />
+            </div>
           </div>
         </div>
       </div>

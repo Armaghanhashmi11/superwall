@@ -50,7 +50,7 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
                     <p className="text-[17px] md:text-[22px] font-medium mt-2">
                       Free Mint Terms & Conditions:{" "}
                     </p>
-                    <p className="text-[14px] md:text-lg font-medium flex ">
+                    <p className="text-[12px] md:text-lg font-medium flex ">
                       <img
                         className="mr-2 w-[25px] h-[25px]"
                         src="/assets/images/neoncheck.png"
@@ -58,7 +58,7 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
                       />{" "}
                       Super Pass Must be Delisted or listed above 1 Eth.
                     </p>
-                    <p className="text-[14px] md:text-lg font-medium flex">
+                    <p className="text-[12px] md:text-lg font-medium flex">
                       <img
                         className="mr-2 w-[25px] h-[25px]"
                         src="/assets/images/neoncheck.png"
@@ -66,7 +66,7 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
                       />{" "}
                       1st snapshot of holders will be taken 2 weeks after Mint
                     </p>
-                    <p className="text-[14px] md:text-lg font-medium flex">
+                    <p className="text-[12px] md:text-lg font-medium flex">
                       <img
                         className="mr-2 w-[25px] h-[25px]"
                         src="/assets/images/neoncheck.png"
@@ -74,7 +74,7 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
                       />{" "}
                       2nd snapshot of holders to be taken before GEB Mint.{" "}
                     </p>
-                    <p className="text-[14px] md:text-lg font-medium flex">
+                    <p className="text-[12px] md:text-lg font-medium flex">
                       <img
                         className="mr-2 w-[25px] h-[25px]"
                         src="/assets/images/neoncheck.png"
@@ -116,7 +116,7 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
                     <p className="text-[17px] md:text-[22px] font-medium mt-2">
                       Free Mint Terms & Conditions:{" "}
                     </p>
-                    <p className="text-[14px] md:text-lg font-medium flex ">
+                    <p className="text-[12px] md:text-lg font-medium flex ">
                       <img
                         className="mr-2 w-[25px] h-[25px]"
                         src="/assets/images/neoncheck.png"
@@ -125,7 +125,7 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
                       The originial minter must be in possession of their Super
                       Pass
                     </p>
-                    <p className="text-[14px] md:text-lg font-medium flex">
+                    <p className="text-[12px] md:text-lg font-medium flex">
                       <img
                         className="mr-2 w-[25px] h-[25px]"
                         src="/assets/images/neoncheck.png"
@@ -134,7 +134,7 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
                       Hard Stake your GEB using the Pylons provided on our GEB
                       Staking Site
                     </p>
-                    <p className="text-[14px] md:text-lg font-medium flex">
+                    <p className="text-[12px] md:text-lg font-medium flex">
                       <img
                         className="mr-2 w-[25px] h-[25px]"
                         src="/assets/images/neoncheck.png"
@@ -143,7 +143,7 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
                       Staked GEB will reward $BRCK + Elemental Brick Fragments
                       to holders every week
                     </p>
-                    <p className="text-[14px] md:text-lg font-medium flex">
+                    <p className="text-[12px] md:text-lg font-medium flex">
                       <img
                         className="mr-2 w-[25px] h-[25px]"
                         src="/assets/images/neoncheck.png"
@@ -152,7 +152,7 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
                       Holders must collect Elemental Brick Fragments and
                       complete all 6 Elemental Bricks
                     </p>
-                    <p className="text-[14px] md:text-lg font-medium flex">
+                    <p className="text-[12px] md:text-lg font-medium flex">
                       <img
                         className="mr-2 w-[25px] h-[25px]"
                         src="/assets/images/neoncheck.png"
@@ -161,7 +161,7 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
                       Staked GEB will reward $BRCK + Elemental Brick Fragments
                       to holders every week
                     </p>
-                    <p className="text-[14px] md:text-lg font-medium flex">
+                    <p className="text-[12px] md:text-lg font-medium flex">
                       <img
                         className="mr-2 w-[25px] h-[25px]"
                         src="/assets/images/neoncheck.png"
@@ -170,7 +170,7 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
                       Holders may stake and unstake freely but the longer you
                       stake, better the rewards.
                     </p>
-                    <p className="text-[14px] md:text-lg font-medium flex">
+                    <p className="text-[12px] md:text-lg font-medium flex">
                       <img
                         className="mr-2 w-[25px] h-[25px]"
                         src="/assets/images/neoncheck.png"
@@ -179,7 +179,7 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
                       Holders must collect Elemental Brick Fragments and
                       complete all 6 Elemental Bricks.
                     </p>
-                    <p className="text-[14px] md:text-lg font-medium flex">
+                    <p className="text-[12px] md:text-lg font-medium flex">
                       <img
                         className="mr-2 w-[25px] h-[25px]"
                         src="/assets/images/neoncheck.png"
@@ -188,7 +188,7 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
                       All 6 Elemental Bricks will be used on Interactive SOW
                       Minting Site to summon a SOW.
                     </p>
-                    <p className="text-[14px] md:text-lg font-medium flex">
+                    <p className="text-[12px] md:text-lg font-medium flex">
                       <img
                         className="mr-2 w-[25px] h-[25px]"
                         src="/assets/images/neoncheck.png"

@@ -1,11 +1,8 @@
 import { useState } from "react";
 import MessageModal from "./component/modal";
 import SecModal from "./component/secmodal";
-import AOS from "aos";
-import "aos/dist/aos.css";
-export default function Mint() {
-  AOS.init();
 
+export default function Mint() {
   const [metamaskopenModal, setmetamaskopenModal] = useState(false);
   function closeModals() {
     setmetamaskopenModal(false);
