@@ -35,13 +35,16 @@ export default function Mint() {
       data-aos-duration="1000"
       className="max-w-[1500px] w-[90%] mx-auto my-20"
     >
-      <div className="flex flex-col lg:flex-row  lg:justify-between items-center w-full">
-        <div className="lg:w-[45%] lg:h-auto">
+      <div className="flex flex-col lg:flex-row   lg:justify-between items-center w-full">
+        <div className="lg:w-[45%] relative lg:h-auto">
           <img
-            className="border-2 border-white rounded-2xl red-box-shadow"
+            className="rounded-[40px]"
             src="/assets/images/supassgif.gif"
             alt="gif"
           />
+           <div className="absolute  w-full h-full left-0 top-0 " >
+        <img className="w-full h-full " width={'100%'} height='100%' alt="neon" src='/assets/images/neonbanner.png'/>
+        </div>
         </div>
         <div className="lg:w-[45%] text-center pt-5 lg:pt-0">
           <p className="text-5xl font-bold text-transparent  bg-clip-text bg-gradient-to-r to-[#FF566B] via-[#633CFD]  from-[#21E5F0]">

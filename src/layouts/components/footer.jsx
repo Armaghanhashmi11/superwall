@@ -98,7 +98,7 @@ const Footer = () => {
             Be the first to know about discounts, offers, events, alphas, beta
             testing and more!{" "}
           </p>
-          <div className="w-[70%] mx-auto lg:w-[90%] lg:ml-0 lg:mr-0   bg-gradient-to-r team-shadow border-4 border-white p-1 rounded-full">
+          <div className="w-[70%] mx-auto lg:w-[90%] lg:ml-0 lg:mr-0  relative  rounded-full">
             <form className="bg-[#12002D] flex justify-evenly px-2 items-center rounded-full" ref={form} onSubmit={sendEmail}>
               <div>
                 <img src="/assets/images/sms.png" alt="website" />
@@ -114,6 +114,9 @@ const Footer = () => {
                 <input type="submit" value="Subscribe" className="font-bold cursor-pointer"/>
               </div>
             </form>
+            <div className="absolute w-full h-full top-0" >
+        <img className="w-full h-full " width={'100%'} height='100%' alt="neon" src='/assets/images/subsribe.png'/>
+        </div>
           </div>
         </div>
       </div>

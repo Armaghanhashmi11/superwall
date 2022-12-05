@@ -13,8 +13,62 @@ import { useReactCountdown } from "./components/timer";
 import UtilityPerk from "./components/utility-perk";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { UtilityPerkData } from "constant/utility_perk";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 export default function Home() {
+  const CustomDot = ({ onClick, ...rest }) => {
+    const {
+      onMove,
+      index,
+      active,
+      carouselState: { currentSlide, deviceType },
+    } = rest;
+    console.log(currentSlide)
+    const carouselItems = [
+      // <div className="w-9 mx-2 h-2  bg-gradient-to-r from-[#54E0ED] via-[#5B2DED] to-[#DB1E71]  rounded-full">
+      // </div>,
+      // <div className="w-2 mx-2 h-2  bg-gray rounded-full">
+      // </div>,
+      // <div className="w-2 h-2  bg-gray rounded-full">
+      // </div>,
+    ];
+    // onMove means if dragging or swiping in progress.
+    // active is provided by this lib for checking if the item is active or not.
+    return (
+      <button
+        className={active ? "block lg:hidden  w-9 mx-2 h-2  bg-gradient-to-r from-[#54E0ED] via-[#5B2DED] to-[#DB1E71]  rounded-full" :'block lg:hidden w-2 mx-2 h-2  bg-gray rounded-full'
+}
+        onClick={() => onClick()}
+      >
+        {React.Children.toArray(carouselItems)[index]}
+      </button>
+    );
+  };
+
   AOS.init();
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 1,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
   let dateToEndCountdownAt = "December 5, 2022 23:47:00";
   const { days, hours, minutes, seconds, hidePresaleSection } =
     useReactCountdown(dateToEndCountdownAt);
@@ -50,14 +104,14 @@ export default function Home() {
             </div>
           </>
         ) : (
-          <div>
+          <div className="relative "  data-aos="fade-up"
+          data-aos-duration="1000"
+          >
             <div
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              className="red-box-shadow border-2 border-white  rounded-2xl"
+             className="  rounded-2xl"
             >
               <img
-                className="w-[725px] h-[481px] rounded-2xl"
+                className="w-[720px] h-[481px] rounded-2xl"
                 src="/assets/images/supassgif.gif"
                 alt="gif"
               />
@@ -67,6 +121,9 @@ export default function Home() {
                 <Button text="Mint Now" />
               </div>
             </a>
+            <div className="absolute w-full md:w-[745px] right-0 -left-0 md:-left-4 h-[505px] -top-2" >
+        <img className="w-full h-full " width={'100%'} height='100%' alt="neon" src='/assets/images/neonbanner.png'/>
+        </div>
           </div>
         )}
         <div data-aos="fade-up" data-aos-duration="1000" className="py-20">
@@ -110,9 +167,9 @@ export default function Home() {
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="w-[350px] md:w-[90%] md:mx-auto flex md:grid   md:grid-cols-2  lg:grid-cols-3 gap-14 pt-20 overflow-x-scroll md:overflow-hidden"
+          className="w-[90%] mx-auto md:w-[90%] md:mx-auto flex md:grid   md:grid-cols-1  lg:grid-cols-3  pt-20 "
         >
-          <div className="hidden ml-5 bg-[#202633] z-10 rounded-[40px] border-2 border-white red-box-shadow shadow-[0px 4px 24px rgba(0, 0, 0, 0.25)] ">
+          <div  className="hidden ml-5 bg-[#202633] z-10 rounded-[40px] border-2 border-white red-box-shadow shadow-[0px 4px 24px rgba(0, 0, 0, 0.25)] ">
             <div className="w-[374px] h-[280px] px-4 py-5  md:h-full md:w-full md:py-10 md:px-8">
               <p className="font-semibold text-2xl leading-9 text-white">
                 GEB & SOW Free Mint
@@ -128,39 +185,34 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <UtilityPerk
-            imgsrc="/assets/images/Union.png"
-            heading="GEB & SOW Free Mint"
-            text="Only Available to Super Pass Holders!
-            Super Pass Holders can be eligible for the following free mints:GEB Free Mint x1
-            SOW Free Mint x1 *T&Cs Applied*"
-          />
-          <UtilityPerk
-            imgsrc="/assets/images/hand.png"
-            heading="Super Collab"
-            text="Super Pass Holders may be eligible for a Super Collab with Superwall.
-All proposals will be reviewed & only proposals approved by Superwall's internal team."
-          />
-          <UtilityPerk
-            imgsrc="/assets/images/addition.png"
-            heading="Additional WL from Collaboration Projects"
-            text="Not all Super Pass holders may be eligible to mint. Depending on the projects supply/allocation it will be a FCFS basis."
-          />
-          <UtilityPerk
-            imgsrc="/assets/images/alpha.png"
-            heading="Superwall Alpha Room"
-            text="Superwall Alpha Room only accessible to Super Pass, Genesis Elemental Bricks and S.O.W Holders."
-          />
-          <UtilityPerk
-            imgsrc="/assets/images/subscription.png"
-            heading="Super Subscription"
-            text="(3) Super Subscriptions that each have a 3 month subscription plan that can be used to subscribe to any Super on our superwall platform to view their contents."
-          />
-          <UtilityPerk
-            imgsrc="/assets/images/annual.png"
-            heading="Annual Gala Dinner & Award Ceremony"
-            text="All Super Pass Holders will be given an invitation to our Annaul Gala Dinner & Award Ceremony."
-          />
+          
+          {UtilityPerkData.map((items, index) => (
+            <div className="hidden  lg:block" key={index}>
+              <UtilityPerk
+                imgsrc={items.imgsrc}
+                heading={items.heading}
+                text={items.text}
+              />
+            </div>
+          ))}
+          <Carousel
+            responsive={responsive}
+            showDots
+            customDot={<CustomDot />}
+            arrows={false}
+            
+          >
+            {UtilityPerkData.map((items, index) => (
+              <div className="block lg:hidden" key={index}>
+                <UtilityPerk
+                  imgsrc={items.imgsrc}
+                  heading={items.heading}
+                  text={items.text}
+                />
+              </div>
+            ))}
+          </Carousel>
+          
         </div>
         <div
           data-aos="fade-up"
