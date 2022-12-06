@@ -9,20 +9,20 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
     <div className="w-full  mt-10 p-2">
       <div className="  shadow-[0px 4px 24px rgba(0, 0, 0, 0.25)] rounded-[30px] ">
         <div
-          className={` bg-gradient-to-r red-box-shadow bg-white ${
+          className={`relative  ${
             open ? "rounded-t-[30px]" : "rounded-[30px]"
           }    p-1`}
         >
-          <div className="flex   justify-between items-center bg-[#202633] rounded-[30px]">
+          <div className="z-10 flex   justify-between items-center bg-[#202633] rounded-xl md:rounded-[30px]">
             <div className="flex items-center ">
-              <div className="right-gradient-bdr ">
+              <div className="pl-0 lg:pl-10 ">
                 <img className={imgWidth} src={imgsrc} alt="superdeakneon " />
               </div>
               <p className="text-[12px] md:text-[26px] font-bold leading-[22px] text-white ml-8 ">
                 {heading}
               </p>
             </div>
-            <div className="mr-10">
+            <div className="mr-10 z-10">
               <button
                 type="button"
                 onClick={() => {
@@ -37,11 +37,20 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
               </button>
             </div>
           </div>
+          <div className="absolute h-full w-full top-0">
+              <img
+                className="w-full h-full "
+                width={"100%"}
+                height="100%"
+                alt="neon"
+                src="/assets/images/collapse.png"
+              />
+            </div>
         </div>
         <div>
           <Collapsible open={open}>
-            <div className="bg-gradient-to-r red-box-shadow bg-white p-1 rounded-b-[30px] -mt-[7px]">
-              <div className="flex flex-col lg:flex-row lg:justify-between items-start lg:items-center bg-[#202633] rounded-b-[30px] w-full">
+            <div className="relative rounded-b-[30px] -mt-[7px]">
+              <div className="flex flex-col lg:flex-row lg:justify-between items-start lg:items-center bg-[#202633] rounded-[30px] w-full">
                 {firstitems ? (
                   <div className="w-[95%] md:w-[70%] mx-5 my-10">
                     <p className="text-lg md:text-2xl font-semibold">
@@ -233,10 +242,20 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
                   </div>
                 )}
               </div>
+              <div className="absolute h-full w-full   top-0">
+              <img
+                className="w-full h-full "
+                width={"100%"}
+                height="100%"
+                alt="neon"
+                src="/assets/images/collapsefull.png"
+              />
+            </div>
             </div>
           </Collapsible>
         </div>
       </div>
+      
     </div>
   );
 };

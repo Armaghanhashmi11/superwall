@@ -110,7 +110,7 @@ export default function Home() {
           >
             <div className="rounded-2xl">
               <img
-                className="w-[710px] h-[481px] rounded-2xl"
+                className="w-[710px] h-[215px] md:h-[481px] rounded-2xl"
                 src="/assets/images/supassgif.gif"
                 alt="gif"
               />
@@ -120,7 +120,7 @@ export default function Home() {
                 <Button text="Mint Now" />
               </div>
             </a>
-            <div className="absolute w-full md:w-[745px] right-0 -left-0 md:-left-4 h-[505px] -top-2">
+            <div className="absolute w-full md:w-[745px] right-0 -left-0 md:-left-4 md:h-[505px] -top-2">
               <img
                 className="w-full h-full "
                 width={"100%"}
@@ -231,12 +231,12 @@ export default function Home() {
             firstimage={true}
             heading="Genesis Elemental Bricks"
             imgsrc="/assets/images/geb.png"
-            imgWidth="w-[100px] h-[100px]"
+            imgWidth="w-[50px] h-[50px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px]"
           />
           <Collapseble
             heading="Some Other World"
             imgsrc="/assets/images/world.png"
-            imgWidth="w-[100px] h-[100px]"
+            imgWidth="w-[50px] h-[50px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px]"
           />
           {/* <SuperDeal />
           <SuperDeal
