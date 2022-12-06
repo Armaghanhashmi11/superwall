@@ -9,7 +9,7 @@ const UtilityPerk = ({ imgsrc, heading, text, Enter, Leave }) => {
 
       {/* )} */}
       <div
-        className="cursor-pointer bg-[#202633] relative rounded-[50px] shadow-[0px 4px 24px rgba(0, 0, 0, 0.25)]   mx-3 lg:m-3"
+        className="cursor-pointer  bg-[#202633] h-full w-full md:min-h-full min-h-[340px]   relative  rounded-[50px] shadow-[0px 4px 24px rgba(0, 0, 0, 0.25)]   "
         onMouseEnter={() => setIsShown(true)}
         onMouseLeave={() => setIsShown(false)}
       >

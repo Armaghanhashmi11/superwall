@@ -4,7 +4,7 @@ import React from "react";
 export default function Header() {
 
   return (
-    <div className="max-w-[1500px] mx-auto w-full lg:w-[90%] lg:mx-auto h-20 flex justify-between items-center">
+    <div className="max-w-[1500px] pt-10 mx-auto w-full lg:w-[90%] lg:mx-auto h-20 flex justify-between items-center">
       <div>
         <img src="assets/images/logo.png"  alt="logo"/>
       </div>

@@ -108,27 +108,28 @@ export default function Home() {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <div className="rounded-2xl">
+            <div className="rounded-2xl relative px-1 py-1 md:px-2 md:py-3">
               <img
-                className="w-[710px] h-[215px] md:h-[481px] rounded-2xl"
+                className="w-[710px] h-[215px] md:h-[510px] lg:max-w-[585px] lg:max-h-[508px] rounded-2xl"
                 src="/assets/images/supassgif.gif"
                 alt="gif"
               />
-            </div>
-            <a href="/mint" alt="mint">
-              <div className="pt-10 w-56 mx-auto cursor-pointer">
-                <Button text="Mint Now" />
-              </div>
-            </a>
-            <div className="absolute w-full md:w-[745px] right-0 -left-0 md:-left-4 md:h-[505px] -top-2">
+              <div className="absolute w-full h-full  right-0 -left-0   top-0">
               <img
-                className="w-full h-[230px] md:h-full "
+                className="w-full  h-full "
                 width={"100%"}
                 height="100%"
                 alt="neon"
                 src="/assets/images/neonbanner.png"
               />
             </div>
+            </div>
+            <a href="/mint" alt="mint">
+              <div className="pt-10 w-56 mx-auto cursor-pointer">
+                <Button text="Mint Now" />
+              </div>
+            </a>
+            
           </div>
         )}
         <div data-aos="fade-up" data-aos-duration="1000" className="pt-20">
@@ -192,7 +193,7 @@ export default function Home() {
           </div>
 
           {UtilityPerkData.map((items, index) => (
-            <div className="hidden  lg:block" key={index}>
+            <div className="hidden px-4 py-4  lg:block" key={index}>
               <UtilityPerk
                 imgsrc={items.imgsrc}
                 heading={items.heading}
@@ -207,7 +208,7 @@ export default function Home() {
             arrows={false}
           >
             {UtilityPerkData.map((items, index) => (
-              <div className="block lg:hidden" key={index}>
+              <div className="block lg:hidden mb-8" key={index}>
                 <UtilityPerk
                   imgsrc={items.imgsrc}
                   heading={items.heading}

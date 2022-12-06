@@ -49,8 +49,8 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
         </div>
         <div>
           <Collapsible open={open}>
-            <div className="relative rounded-b-[30px] -mt-[7px]">
-              <div className="flex flex-col lg:flex-row lg:justify-between items-start lg:items-center bg-[#202633] rounded-[30px] w-full">
+            <div className="relative z-[-1] pl-1 rounded-b-[43px] w-full h-full -mt-[10px]">
+              <div className="flex flex-col lg:flex-row lg:justify-between items-start rounded-[30px] lg:items-center bg-[#202633] rounded-[30px] w-full">
                 {firstitems ? (
                   <div className="w-[95%] md:w-[70%] mx-5 my-10">
                     <p className="text-lg md:text-2xl font-semibold">
@@ -242,7 +242,7 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
                   </div>
                 )}
               </div>
-              <div className="absolute h-full w-full   top-0">
+              <div className="absolute h-full w-full  top-0">
               <img
                 className="w-full h-full "
                 width={"100%"}

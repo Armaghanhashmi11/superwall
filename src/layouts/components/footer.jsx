@@ -25,8 +25,8 @@ const Footer = () => {
   };
   return (
     <div className="bg-[#12002D] pt-16">
-      <div className="max-w-[1500px] mx-auto grid justify-center  lg:grid-cols-5 bg-[#12002D]">
-        <div className=" col-span-2 lg:col-span-1 pb-8 lg:pt-16 lg:pl-10 lg:pb-10">
+      <div className="max-w-[1500px] mx-auto grid justify-center lg:grid-cols-5 bg-[#12002D]">
+        <div className=" col-span-2 lg:col-span-1 pb-8  lg:pl-10 lg:pb-10">
           <div className="flex justify-center items-center lg:justify-start ">
             <img
               className="w-[157px] "
@@ -68,7 +68,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="pt-0 lg:pt-16 mt-4 lg:pl-20 lg:pb-10">
+        <div className="pt-0  mt-4 lg:pl-20 lg:pb-10">
           <p className="text-[17px] font-bold leading-5 text-white text-center lg:text-left">
             Superwall.co
           </p>
