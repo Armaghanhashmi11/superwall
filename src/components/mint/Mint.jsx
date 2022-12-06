@@ -33,9 +33,9 @@ export default function Mint() {
       className="max-w-[1500px] w-[90%] mx-auto my-20"
     >
       <div className="flex flex-col lg:flex-row   lg:justify-between items-center w-full">
-        <div className="lg:w-[45%] relative lg:h-auto">
+        <div className="lg:w-[45%] h-[215px] md:h-full relative lg:h-auto">
           <img
-            className="rounded-[40px]"
+            className="rounded-[40px] h-[215px] md:h-full"
             src="/assets/images/supassgif.gif"
             alt="gif"
           />

@@ -122,7 +122,7 @@ export default function Home() {
             </a>
             <div className="absolute w-full md:w-[745px] right-0 -left-0 md:-left-4 md:h-[505px] -top-2">
               <img
-                className="w-full h-full "
+                className="w-full h-[230px] md:h-full "
                 width={"100%"}
                 height="100%"
                 alt="neon"

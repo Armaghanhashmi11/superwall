@@ -10,7 +10,7 @@ const SuperSpaceHolder = () => {
           <p className='font-lato font-normal  text-lg md:text-[39px] text-center text-white pt-3 pb-[55px] racingfont mx-2'>Total  combined  value  of  Nearly  1  Eth!</p>
         </div>
         <div className="absolute w-full h-full top-0" >
-        <img className="w-full h-full " width={'100%'} height='100%' alt="neon" src='/assets/images/neonbanner.png'/>
+        <img className="w-full h-full " width={'100%'} height='100%' alt="neon" src='/assets/images/superdealneons.png'/>
         </div>
       </div>
       
