@@ -6,7 +6,7 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full  mt-10 p-2">
+    <div className="w-full max-w-[1280px] mt-10 p-2">
       <div className="  shadow-[0px 4px 24px rgba(0, 0, 0, 0.25)] rounded-[30px] ">
         <div
           className={`relative  ${

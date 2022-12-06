@@ -125,7 +125,7 @@ const Footer = () => {
           </p>
           <div className="w-[70%] mx-auto lg:w-[90%] lg:ml-0 lg:mr-0  relative  rounded-full">
             <form
-              className="bg-[#12002D] flex justify-evenly px-7 items-center rounded-full"
+              className=" flex justify-evenly px-7 items-center rounded-full z-10"
               ref={form}
               onSubmit={sendEmail}
             >
@@ -137,7 +137,7 @@ const Footer = () => {
                   placeholder="Enter your email"
                   type="email"
                   name="user_email"
-                  className="bg-[#12002D] outline-none block w-full p-4"
+                  className="bg-[#12002D] outline-none block w-full p-4 z-10"
                 />
               </div>
               <div className="cursor-pointer">
@@ -148,9 +148,9 @@ const Footer = () => {
                 />
               </div>
             </form>
-            <div className="absolute w-full h-full top-0">
+            <div className="absolute w-full h-full top-0 ">
               <img
-                className="w-full h-full "
+                className="w-full h-full  "
                 width={"100%"}
                 height="100%"
                 alt="neon"
