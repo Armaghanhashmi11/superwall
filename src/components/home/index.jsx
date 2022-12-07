@@ -73,7 +73,7 @@ export default function Home() {
     useReactCountdown(dateToEndCountdownAt);
   console.log(hidePresaleSection);
   return (
-    <div className="max-w-[1500px] w-[90%] mx-auto my-12">
+    <div className="max-w-[1500px] w-[95%] md:w-[90%] mx-auto my-12">
       <div className="flex flex-col justify-center items-center">
         <div data-aos="fade-up" data-aos-duration="1000">
           <img
@@ -136,6 +136,12 @@ export default function Home() {
           <img
             src="/assets/images/supperwallnftseries.png"
             alt="supperwallnftseries"
+            className="md:block hidden"
+          />
+          <img
+          src="/assets/images/super-wall-neon.png"
+          alt="supperwallnftseries"
+          className="md:hidden block"
           />
         </div>
         <p className="text-2xl font-bold  text-center  text-white  hidden md:block pt-10">

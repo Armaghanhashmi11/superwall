@@ -123,7 +123,7 @@ const Footer = () => {
             Be the first to know about discounts, offers, events, alphas, beta
             testing and more!{" "}
           </p>
-          <div className="w-[70%] mx-auto lg:w-[90%] lg:ml-0 lg:mr-0  relative  rounded-full">
+          <div className="w-[95%] md:w-[70%] mx-auto lg:w-[90%] lg:ml-0 lg:mr-0  relative  rounded-full">
             <form
               className=" flex justify-evenly px-7 items-center rounded-full z-10"
               ref={form}

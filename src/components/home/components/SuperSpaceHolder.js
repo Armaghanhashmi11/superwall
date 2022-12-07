@@ -3,7 +3,7 @@ import React from 'react'
 const SuperSpaceHolder = () => {
   return (
       <div className='relative  w-full  p-[3px]'>
-        <div className=' bg-[#202633] rounded-[40px] shadow-[0px 4px 24px rgba(0, 0, 0, 0.25)] '>
+        <div className=' bg-[#202633] w-full rounded-lg md:rounded-[40px] shadow-[0px 4px 24px rgba(0, 0, 0, 0.25)] '>
           <img className='w-[80%] mx-auto' src='/assets/images/superdealneon.png' alt='superdeakneon'/>
           <p className='font-medium text-sm md:text-[27px] leading-[40.5px] text-center text-white'>🔥 “Get 3 For The Price Of 1” 🔥</p>
           <p className='font-medium text-sm md:text-[27px] leading-[40.5px] text-center text-white mx-2'>Super Pass  -{'>'}   Genesis Elemental Bricks  -{'>'}   Some Other World</p>

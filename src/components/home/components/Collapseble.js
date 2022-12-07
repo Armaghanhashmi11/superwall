@@ -11,9 +11,9 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
         <div
           className={`relative  ${
             open ? "rounded-t-[30px]" : "rounded-[30px]"
-          }    p-1`}
+          }   p-0 md:p-1`}
         >
-          <div className="z-10 flex   justify-between items-center bg-[#202633] rounded-xl md:rounded-[30px]">
+          <div className="z-10 flex w-full  justify-between items-center bg-[#202633] rounded-xl md:rounded-[30px]">
             <div className="flex items-center ">
               <div className="pl-0 lg:pl-10 ">
                 <img className={imgWidth} src={imgsrc} alt="superdeakneon " />
@@ -22,7 +22,7 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
                 {heading}
               </p>
             </div>
-            <div className="mr-10 z-10">
+            <div className="pr-10 z-10">
               <button
                 type="button"
                 onClick={() => {
@@ -49,7 +49,7 @@ const Collapseble = ({ heading, imgsrc, imgWidth, firstitems, firstimage }) => {
         </div>
         <div>
           <Collapsible open={open}>
-            <div className="relative z-[-1] pl-1 rounded-b-[43px] w-full h-full -mt-[10px]">
+            <div className="relative z-[-1] pl-0 md:pl-1 rounded-b-[43px] w-full h-full -mt-[10px]">
               <div className="flex flex-col lg:flex-row lg:justify-between items-start rounded-[30px] lg:items-center bg-[#202633] rounded-[30px] w-full">
                 {firstitems ? (
                   <div className="w-[95%] md:w-[70%] mx-5 my-10">
